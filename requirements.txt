@@ -1,0 +1,14 @@
+# Data Manipulation and Linear Algebra
+numpy
+pandas
+
+# Data Visualization
+plotly
+matplotlib
+seaborn
+
+# Machine Learning and Preprocessing
+scikit-learn
+
+# Gradient Boosting
+xgboost
