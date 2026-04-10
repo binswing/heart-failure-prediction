@@ -1,6 +1,7 @@
 # Data Manipulation and Linear Algebra
 numpy
 pandas
+pyyaml
 
 # Data Visualization
 plotly
