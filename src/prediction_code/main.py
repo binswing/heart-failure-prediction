@@ -109,23 +109,8 @@ def model_train(model):
     # plt.title('ROC_AUC_Plot')
     # plt.show()
 
-# Train KNN classifier
-knn = KNeighborsClassifier(n_neighbors=5, weights='distance')
-print("--- KNN ---")
-model_train(knn)
-
-# Train RandomForest Classifier
-rf = RandomForestClassifier(n_estimators=120, random_state=42)
-print("--- RandomForest ---")
-model_train(rf)
-
-# Train MLP Classifier
-nn = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=500, random_state=42)
-print("--- MLP ---")
-model_train(nn)
-
 # Train Logistic Regression 
-lr = LogisticRegression(random_state=42, max_iter=1000)
+lr = LogisticRegression(random_state=42, max_iter=50)
 print("--- Logistic Regression ---")
 model_train(lr)
 
@@ -139,12 +124,15 @@ xgb_model = XGBClassifier(
                         max_depth=3,
                         max_leaves=4,
                         reg_alpha=0.5,
-                        reg_lambda=1,
+                        reg_lambda=1
                         )
 print("--- XGBoost ---")
 model_train(xgb_model)
 
 # Train SVM
-svm_model = SVC(kernel='rbf', random_state=42)
+svm_model = SVC(kernel='linear',
+                C=2,
+                random_state=42
+               )
 print("--- SVM ---")
 model_train(svm_model)
