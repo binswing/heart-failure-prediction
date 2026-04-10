@@ -23,7 +23,7 @@ def render_training_tab(df):
                 if os.path.exists(path):
                     st.session_state['pipelines'][name] = HeartDiseasePipeline.load(path)
                 else:
-                    st.error(f" Missing {name}! Run `train_and_save.py` first.")
+                    st.error(f" Missing {name}! Run `main.py` first.")
                     return
 
             X_train, X_test, y_train, y_test = preprocess_data(df)
