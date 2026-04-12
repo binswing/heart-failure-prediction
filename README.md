@@ -13,7 +13,7 @@ The project features a complete end-to-end pipeline from data cleaning and Explo
 
 **Kaggle notebook:** [Click here to view the Kaggle notebook](https://www.kaggle.com/code/longnguyentuan/heart-failure-prediction-dm)
 
-**Github Repo:** [Click here to view the Github Repo](https://github.com/binswing/Pisa-scores-prediction)
+**Github Repo:** [Click here to view the Github Repo](https://github.com/binswing/heart-failure-prediction)
 
 **Live Demo:** [Click here to view the App](https://heart-failure-prediction-demo.streamlit.app/)
 
@@ -59,8 +59,8 @@ We implemented and compared three classification algorithm:
 * **Framework:** Streamlit
 * **Features:**
     * **Interactive Clinical Dashboard**: Data visualization including demographic Violin plots, vital sign Boxplots, and Multivariate Correlation Heatmaps.
-    * **Model Consensus Inference**: Real-time diagnostic interface that runs patient data through all three AI engines simultaneously to reach a "consensus" prediction.
-    * **Test Set Auditing**: A tool to scroll through unseen patient records and cross-reference Ground Truth against AI predictions (Correct/Incorrect highlighting).
+    * **Model Consensus Inference**: Real-time diagnostic interface that runs patient data through all three engines simultaneously to reach a "consensus" prediction.
+    * **Test Set Auditing**: A tool to scroll through unseen patient records and cross-reference Ground Truth against predictions (Correct/Incorrect highlighting).
 
 ## Installation
 - Build
@@ -77,6 +77,6 @@ We implemented and compared three classification algorithm:
 ```
 - Run demo app locally
 ```bash
-    python main.py #Run this line once to generate the .joblib model files 
+    python main.py #Run this line first and once to generate the .joblib model files 
     streamlit run visualization_and_demo_app/app.py
 ```
